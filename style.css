@@ -185,13 +185,19 @@ body {
   background: black;
 }
 
-input[type=text] {
+form {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+form input[type=text] {
   color: black;
+  outline: 0;
 }
 
 ul.names {
-  margin: 50px 0 0 0;
-  font-size: 85px;
+  margin: 25px 0 0 0;
+  font-size: 80px;
   list-style: none;
   line-height: 70px;
 }

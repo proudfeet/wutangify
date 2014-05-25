@@ -34,7 +34,7 @@ movieApp.searchCharacters = function(id){
 movieApp.displayCharacters = function(credits){
 	for (i = 0; i <= 8; i++){
 			var characterName = credits.cast[i].character;
-			$('.name' + i).replaceWith(characterName);
+			$('.name' + i).html(characterName);
 			console.log(characterName);
 		}
 };
