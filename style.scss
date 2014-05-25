@@ -23,7 +23,23 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 	 	input[type=text] {
 	 		color: black;
+	 		font-size: 20px;
 	 		outline: 0;
+	 		border-radius: 5px;
+	 		padding: 5px;
+	 	}
+
+	 	input[type=submit] {
+	 		background: black;
+	 		color: white;
+	 		padding: 5px;
+	 		border-radius: 5px;
+	 		border: 5px solid white;
+	 	}
+
+	 	input[type=submit]:hover {
+	 		border: 5px solid $yellow;
+	 		color: $yellow;
 	 	}
 	}
 
