@@ -205,6 +205,12 @@ form input[type=submit] {
   border: 5px solid #f1c40f;
 }
 
+p {
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
 ul.names {
   margin: 25px 0 0 0;
   font-size: 80px;
@@ -219,6 +225,10 @@ ul.names .punctuation {
 @media (max-width: 940px) {
   form {
     font-size: 18px;
+  }
+
+  p {
+    font-size: 30px;
   }
 
   ul.names {
@@ -270,9 +280,15 @@ ul.names .punctuation {
     margin: 5px 0 0 0;
   }
 
+  p {
+    margin-top: 85px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
   ul.names {
     padding: 0 0 0 10px;
-    margin: 90px 0 0 0;
+    margin: 10px 0 0 0;
     font-size: 35px;
     line-height: 30px;
   }

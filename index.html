@@ -1,6 +1,6 @@
 <!doctype html>
 <html ng-app>
-<head>
+<head lang="en">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="wutanglogo.png">
 	<meta charset="UTF-8">
@@ -11,12 +11,13 @@
 	
 	<form action="">
 		<label for="movietitle">What movie would you like to Wu-Tangify?</label>
-		<input class="movietitle" id="movietitle" type="text" name="movietitle">
+		<input class="movietitle" id="movietitle" type="text" name="movietitle" ng-model="movietitle">
 		<input id="submit-movie" type="submit" for="movietitle" value="Bring Tha Ruckus">
 	</form>
 
 
 	
+	<p>Oh snap! You get down with {{movietitle}} like that?</p>
 
 	<ul class="names">
 		<li><span class="name0">Method</span><span class="punctuation">&</span></li>
@@ -29,6 +30,7 @@
 		<li><span class="name7">GZA</span><span class="punctuation">&</span></li>
 		<li><span class="name8">O.D.B</span><span class="punctuation">.</span></li>
 	</ul>
+
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

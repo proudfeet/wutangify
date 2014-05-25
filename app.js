@@ -3,6 +3,7 @@ movieApp = {};
 movieApp.apiKey = "12e9e2de03ebd1a7c3cfa3857fde0e3f";
 
 
+
 movieApp.searchMovie = function(){
 	$.ajax("https:api.themoviedb.org/3/search/movie", {
 		type: "GET",
@@ -47,7 +48,6 @@ movieApp.init = function(){
 // JQuery doc ready, with init function called
 $(function(){
 	
-
 	$('input[type=submit]').on('click',function(){
 		movieApp.movieTitle = $('input[type=text]').val();
 		movieApp.init();

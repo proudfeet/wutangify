@@ -38,6 +38,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	 	}
 	}
 
+ 	p {
+ 		margin: 0;
+ 		font-size: 40px;
+ 		text-align: center;
+ 	}
 
  	ul.names {
  		margin: 25px 0 0 0;
@@ -50,6 +55,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		}
  	}
 
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
@@ -57,14 +63,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		font-size: 18px;
 	}
 
+	p {
+		font-size: 30px;
+	}
+
 	ul.names {
 		font-size: 70px;
 		line-height: 60px;
 	}
 }
-
-
-
 
 
 /* Landscape phone to portrait tablet */
@@ -118,9 +125,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		margin: 5px 0 0 0;
 	}
 
+	p {
+		margin-top: 85px;
+		padding: 10px;
+		font-size: 20px;
+	}
+
 	ul.names {
 		padding: 0 0 0 10px;
-		margin: 90px 0 0 0;
+		margin: 10px 0 0 0;
 		font-size: 35px;
 		line-height: 30px;
 	}
