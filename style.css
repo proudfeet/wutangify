@@ -201,3 +201,6 @@ ul.names {
   list-style: none;
   line-height: 70px;
 }
+ul.names .punctuation {
+  color: #f1c40f;
+}
