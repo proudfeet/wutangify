@@ -199,14 +199,10 @@ form input[type=text] {
 }
 form input[type=submit] {
   background: black;
-  color: white;
+  color: #f1c40f;
   padding: 5px;
   border-radius: 5px;
-  border: 5px solid white;
-}
-form input[type=submit]:hover {
   border: 5px solid #f1c40f;
-  color: #f1c40f;
 }
 
 ul.names {
@@ -217,4 +213,67 @@ ul.names {
 }
 ul.names .punctuation {
   color: #f1c40f;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  form {
+    font-size: 18px;
+  }
+
+  ul.names {
+    font-size: 70px;
+    line-height: 60px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  form {
+    font-size: 20px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input[type=text] {
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+  }
+
+  input[type=submit] {
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+  }
+
+  ul.names {
+    margin: 40px 0 0 0;
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  label {
+    font-size: 18px;
+  }
+
+  input[type=text] {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+
+  ul.names {
+    padding: 0 0 0 10px;
+    margin: 90px 0 0 0;
+    font-size: 35px;
+    line-height: 30px;
+  }
 }
