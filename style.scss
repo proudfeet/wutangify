@@ -38,7 +38,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	 	}
 	}
 
- 	p {
+ 	p.ohsnap {
  		margin: 0;
  		font-size: 40px;
  		text-align: center;
@@ -55,6 +55,25 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		}
  	}
 
+ 	p.linkage {
+ 		position: absolute;
+ 		right: 30px;
+ 		bottom: 10px;
+ 		text-align: center;
+
+ 		a {
+ 			color: #000;
+ 			background: #fff;
+ 			padding: 5px;
+ 			text-decoration: none;
+ 			border-radius: 2px;
+ 		}
+
+ 		a:hover {
+ 			background: $yellow;
+ 		}
+ 	}
+
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
@@ -63,7 +82,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		font-size: 18px;
 	}
 
-	p {
+	p.ohsnap {
 		font-size: 30px;
 	}
 
@@ -125,7 +144,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		margin: 5px 0 0 0;
 	}
 
-	p {
+	p.ohsnap {
 		margin-top: 85px;
 		padding: 10px;
 		font-size: 20px;
