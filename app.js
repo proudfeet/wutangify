@@ -33,10 +33,21 @@ movieApp.searchCharacters = function(id){
 };
 
 movieApp.displayCharacters = function(credits){
-	for (i = 0; i <= 8; i++){
+	$(".names").empty();
+	var limitChars;
+	if (credits.cast.length > 8){
+		limitChars = 8;
+	}else{
+		limitChars = credits.cast.length;
+	} console.log(limitChars);
+	for (i = 0; i < limitChars ; i++){
 		var characterName = credits.cast[i].character;
-		$('.name' + i).html(characterName);
-		}
+		$(".names").append("<li class='name'>" + characterName + "<span class='punctuation'>&</span></li>");
+		// $(".name" + i).empty().html(characterName);
+		};
+		$(".name:last-child .punctuation").empty().html(".")
+	
+	
 };
 
 
@@ -51,6 +62,7 @@ $(function(){
 	$('input[type=submit]').on('click',function(){
 		movieApp.movieTitle = $('input[type=text]').val();
 		movieApp.init();
+		$(".names .punctuation").last().empty().html(".");
 	});
 	
 });
